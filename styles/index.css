@@ -73,7 +73,9 @@ aside {
 input {
   border-radius: 8px;
   border: 1px solid #30363d;
-  height: 40px;
+  height: 30px;
+  background-color: #0d1117;
+  color: #30363d;
 }
 
 .recent-activity > div {
@@ -85,11 +87,21 @@ input {
   margin-top: 8px;
   padding: 24px;
 }
+.your-teams p {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
 
 .card-block {
   background-color: #161b22;
   border: 1px solid #30363d;
   border-radius: 8px;
+}
+
+.card-block > p {
+  font-size: 12px;
+  padding: 10px;
 }
 
 @media (min-width: 768px) {
