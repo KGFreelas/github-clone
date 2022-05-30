@@ -1,0 +1,85 @@
+/* ===========Global===========*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+/* ===========Header===========*/
+
+header {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #161b22;
+  color: #f0f6fc;
+}
+
+header a {
+  text-decoration: none;
+  color: #f0f6fc;
+  opacity: 1;
+}
+
+header a:hover {
+  opacity: 0.8;
+}
+
+.navigation {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  font-weight: bold;
+}
+
+input {
+  width: 300px;
+  margin: auto;
+  padding: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.199);
+  border-radius: 8px;
+  background-color: #0d1117;
+  color: white;
+  font-size: 18px;
+}
+
+nav ul {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.icons-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  position: relative;
+ 
+}
+
+header img {
+  border-radius: 100%;
+}
+
+.icon-img::after {
+  content: '';
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  border-radius: 100%;
+  top: -4px;
+  right: -4px;
+  border: 1px solid #0d1117;
+  background: linear-gradient(to bottom, #73abff, #004cb7);
+}
+
