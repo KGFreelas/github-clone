@@ -27,12 +27,22 @@ aside {
   align-items: center;
 }
 
+.recent-repositories-title h4 {
+  font-weight: normal;
+}
+
 .recent-activity {
   grid-area: recent;
+}
+.recent-activity h4 {
+  font-weight: normal;
 }
 
 .your-teams {
   grid-area: teams;
+}
+.your-teams h4 {
+  font-weight: normal;
 }
 
 .list-repository {
@@ -86,7 +96,7 @@ input {
 
 .your-teams > div {
   margin-top: 8px;
-  padding: 24px;
+  padding: 12px;
 }
 .your-teams p {
   font-weight: bold;
