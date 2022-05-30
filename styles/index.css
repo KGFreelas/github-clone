@@ -12,7 +12,3 @@ main {
   flex-direction: row;
   border: 1px solid red;
 }
-
-.itens a {
-  display: flex;
-}
