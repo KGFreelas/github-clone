@@ -1,0 +1,18 @@
+main {
+  background-color: #010409;
+}
+
+.box-following {
+  display: flex;
+  gap: 24px;
+}
+
+.itens {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid red;
+}
+
+.itens a {
+  display: flex;
+}
