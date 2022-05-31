@@ -1,61 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GitHub Clone</title>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/index.css" />
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title></title>
+  </head>
+  <body>
 
-<link rel="shortcut icon" href="images/favicon-github.png" type="image/x-icon">
+    <header>
+      <div class="navigation">
+  
+       <a href="#">
+         <div class="menu-hamburger">
+           <div></div>
+           <div></div>
+           <div></div>
+         </div>
+       </a>
+  
+        <img class="logo" src="images/icons8-github-48.png" alt="">
+  
+        <input type="text" name="" value="Search or jump to...">
+  
+        
+          <nav>
+            <ul>
+              <a href="#">
+                <li><h3>Pull request</h3>
+              </a>
+            
+              </li>
+              <a href="#">
+                <li><h3>Issues</h3></li>
+              </a>
+              <a href="#">
+                <li><h3>Marketplace</h3></li>
+              </a>
+              <a href="#">
+                <li><h3>Explore</h3></li>
+              </a>
+            </ul>
+          </nav>
+        
+      </div>
+  
+      <div class="icons-header">
+  
+        <div class="icon-bell"><a href="#"><img src="images/bell.svg" alt=""></a></div>
+        <div class="icon-plus"><a href="#"><img src="images/plus.svg" alt=""></a></div>
+        <div class="icon-img"><a href="#"><img src="images/img-perfil.jfif" alt=""></a></div>
+      </div>
+    </header>
+  
+    <aside>
+      <div class="recent-repositories">
+        <div class="recent-repositories-title">
+          <h4>Repositories</h4>
+          <div class="green-button">
+            <img src="images/repository.png" alt="" />
+            <p>New</p>
+          </div>
+        </div>
 
-<link rel="stylesheet" href="index.css">
-</head>
-<body>
-  <header>
-    <div class="navigation">
+        <div class="list-repository card-block">
+          <input type="search" placeholder="   Find a repository..." id="" />
 
-     <a href="#">
-       <div class="menu-hamburger">
-         <div></div>
-         <div></div>
-         <div></div>
-       </div>
-     </a>
+          <div class="list-repository_item">
+            <img src="images/perfilgus.jpeg" alt="" />
+            <a href="#">lgustavotec/javascript-course</a>
+          </div>
 
-      <img class="logo" src="images/icons8-github-48.png" alt="">
+          <div class="list-repository_item">
+            <img src="images/perfilgus.jpeg" alt="" />
+            <a href="#">lgustavotec/html-css</a>
+          </div>
 
-      <input type="text" name="" value="Search or jump to...">
+          <div class="list-repository_item">
+            <img src="images/kfg.png" alt="" />
+            <a href="#">lgustavotec/site-robo</a>
+          </div>
 
-      
-        <nav>
-          <ul>
-            <a href="#">
-              <li><h3>Pull request</h3>
-            </a>
-          
-            </li>
-            <a href="#">
-              <li><h3>Issues</h3></li>
-            </a>
-            <a href="#">
-              <li><h3>Marketplace</h3></li>
-            </a>
-            <a href="#">
-              <li><h3>Explore</h3></li>
-            </a>
-          </ul>
-        </nav>
-      
-    </div>
+          <div class="list-repository_item">
+            <img src="images/perfilgus.jpeg" alt="" />
+            <a href="#">lgustavotec/landing-page-marketing-criativo</a>
+          </div>
 
-    <div class="icons-header">
+          <div class="list-repository_item">
+            <img src="images/perfilgus.jpeg" alt="" />
+            <a href="#">lgustavotec/homepagegoogle</a>
+          </div>
 
-      <div class="icon-bell"><a href="#"><img src="images/bell.svg" alt=""></a></div>
-      <div class="icon-plus"><a href="#"><img src="images/plus.svg" alt=""></a></div>
-      <div class="icon-img"><a href="#"><img src="images/img-perfil.jfif" alt=""></a></div>
-    </div>
-  </header>
+          <div class="list-repository_item">
+            <img src="images/perfilgus.jpeg" alt="" />
+            <a href="#">lgustavotec/web-history</a>
+          </div>
 
- 
-</body>
+          <div class="list-repository_item">
+            <img src="images/perfilgus.jpeg" alt="" />
+            <a href="#">KGFreelas/github-clone</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="recent-activity">
+        <h4>Recent Activity</h4>
+        <div class="card-block">
+          <p>
+            When you take actions across GitHub, we’ll provide links to that
+            activity here.
+          </p>
+        </div>
+      </div>
+
+      <div class="your-teams">
+        <h4>Your teams</h4>
+        <div class="card-block">
+          <p>You don’t belong to any teams yet!</p>
+        </div>
+      </div>
+    </aside>
+  </body>
 </html>
