@@ -85,19 +85,55 @@ header img {
 
 /* ===========hamburger===========*/
 
-#hamburger {
-  background-color: red;
-  width: 45px;
-  height: 45px;
+.menu-hamburger{
+  
+  height: 50px;
+  width: 50px;
+  background: #004cb7;
   text-align: center;
-  margin: auto;
+  display: none;
+  
+
 }
 
-.menu {
-  background: white;
+.menu-hamburger div{
+  height: 1px;
   width: 30px;
-  height: 0.6px;
+  background: white;
+  margin: 7px auto;
+  padding: 1px;
+  
+  
 }
 
 /* ===========Responsiveness===========*/
 
+@media(max-width: 968px){
+  .menu-hamburger{
+    display: block;
+  }
+
+  input, nav, .icon-plus, .icon-img{
+    display: none;
+  }
+
+  header{
+    display: grid;
+    grid-template-areas: "hamburger logo bell";
+    
+    
+  }
+
+  .menu-hamburger{
+    grid-area: hamburger;
+  }
+
+  .logo{
+    grid-area: logo;
+  }
+
+  .icon-bell{
+    grid-area: bell;
+  }
+}
+  
