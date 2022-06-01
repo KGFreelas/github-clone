@@ -36,7 +36,7 @@ header a:hover {
   font-weight: bold;
 }
 
-input {
+.header-input {
   width: 300px;
   margin: auto;
   padding: 10px;
@@ -53,10 +53,12 @@ nav ul {
   align-items: center;
 }
 
-li {
+header li {
   text-decoration: none;
   list-style: none;
 }
+
+
 
 .icons-header {
   display: flex;
@@ -74,8 +76,8 @@ header img {
 .icon-img::after {
   content: '';
   position: absolute;
-  height: 14px;
-  width: 14px;
+  height: 18px;
+  width: 18px;
   border-radius: 100%;
   top: -4px;
   right: -4px;
@@ -83,15 +85,19 @@ header img {
   background: linear-gradient(to bottom, #73abff, #004cb7);
 }
 
+
+
 /* ===========hamburger===========*/
 
 .menu-hamburger{
   
-  height: 50px;
+  
   width: 50px;
-  background: #004cb7;
-  text-align: center;
+  background: #161b22;
+  flex-direction: column;
   display: none;
+  gap: 10px;
+  justify-content: center;
   
 
 }
@@ -100,8 +106,9 @@ header img {
   height: 1px;
   width: 30px;
   background: white;
-  margin: 7px auto;
-  padding: 1px;
+  margin: auto;
+  
+  
   
   
 }
@@ -110,7 +117,11 @@ header img {
 
 @media(max-width: 968px){
   .menu-hamburger{
-    display: block;
+    display: flex;
+  }
+
+  .logo-header-before{
+    display: none;
   }
 
   input, nav, .icon-plus, .icon-img{
@@ -121,19 +132,28 @@ header img {
     display: grid;
     grid-template-areas: "hamburger logo bell";
     
-    
+  
   }
 
   .menu-hamburger{
     grid-area: hamburger;
   }
 
-  .logo{
+  .logo-header-after{
     grid-area: logo;
-  }
+    
+}
 
   .icon-bell{
     grid-area: bell;
+  }
+
+  
+}
+
+@media (min-width: 969px ){
+  .logo-header-after{
+    display: none;
   }
 }
   
