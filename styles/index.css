@@ -64,21 +64,38 @@ main {
   margin-left: 36px;
 }
 
+.lembrete p {
+  color: #8b949e;
+}
+
 .box-kgfreelas-principal {
   margin: 20px;
   border: 1px solid rgba(240, 245, 252, 0.1);
   border-radius: 8px;
   display: flex;
+  flex-direction: column;
   padding: 20px;
-  justify-content: space-between;
-  align-items: center;
   background-color: #161b22;
+  gap: 8px;
+}
+
+.box-sub-kgfreelas {
+  display: flex;
+  justify-content: space-between;
 }
 
 .box-kgfreelas-githubclone {
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  gap: 10px;
+  align-items: center;
+}
+.box-kgfreelas-githubclone img {
+  width: 48px;
+  border-radius: 100%;
+}
+
+.box-lembrete-img {
+  margin-left: 40px;
 }
 
 .box-star {
@@ -92,6 +109,10 @@ main {
 
 .box-star img {
   width: 20px;
+}
+
+.box-lembrete p {
+  color: #8b949e;
 }
 
 /* ------------------- aside   -------------------------------------------------*/
