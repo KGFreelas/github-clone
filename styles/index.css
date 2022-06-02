@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body{
+  display: grid;
+  grid-template-areas: "aside1 aside2";
+}
+
 aside {
   padding: 20px;
   background-color: #010409;
@@ -10,6 +15,12 @@ aside {
   gap: 24px;
   grid-template-areas: "repositories" "recent" "teams";
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  grid-area: aside1;
+}
+
+#sidebar{
+  grid-area: aside2;
 }
 
 /*areas*/
@@ -174,4 +185,35 @@ input {
 
 .explore-more{
   opacity: 0.6;
+}
+
+
+
+.content-sidebar::before{
+  content: '';
+  height: 290px;
+  width: 1px;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  opacity: 0.3;
+  margin-left: -21px;
+  
+}
+
+.time-notification::before{
+  content: '';
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 6px;
+}
+
+@media(max-width:1003px){
+  #sidebar{
+    display: none;
+  }
 }
