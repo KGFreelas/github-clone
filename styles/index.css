@@ -8,6 +8,11 @@ main {
   background-color: #010409;
 }
 
+a {
+  text-decoration: none;
+  @import;
+}
+
 .following-for-you {
   padding: 20px;
   display: flex;
@@ -94,6 +99,11 @@ main {
   border-radius: 100%;
 }
 
+.box-kgfreelas-githubclone p {
+  color: #8b949e;
+  font-weight: normal;
+}
+
 .box-lembrete-img {
   margin-left: 40px;
 }
@@ -113,6 +123,11 @@ main {
 
 .box-lembrete p {
   color: #8b949e;
+}
+
+.box-lembrete-rp {
+  display: flex;
+  gap: 20px;
 }
 
 /* ------------------- aside   -------------------------------------------------*/
@@ -230,14 +245,10 @@ input {
 
 @media (min-width: 768px) {
   aside {
-    background-color: #0d1117 !important;
   }
   .green-button {
     display: inline-flex;
   }
   .card-block {
-    background-color: transparent;
-    border: none;
-    border-radius: 0;
   }
 }
