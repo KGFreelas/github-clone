@@ -8,11 +8,6 @@ main {
   background-color: #010409;
 }
 
-a {
-  text-decoration: none;
-  @import;
-}
-
 .following-for-you {
   padding: 20px;
   display: flex;
