@@ -3,6 +3,11 @@
   padding: 0;
 }
 
+body{
+  display: grid;
+  grid-template-areas: "aside1 aside2";
+}
+
 aside {
   padding: 20px;
   background-color: #010409;
@@ -10,6 +15,12 @@ aside {
   gap: 24px;
   grid-template-areas: "repositories" "recent" "teams";
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  grid-area: aside1;
+}
+
+#sidebar{
+  grid-area: aside2;
 }
 
 /*areas*/
@@ -126,5 +137,83 @@ input {
     background-color: transparent;
     border: none;
     border-radius: 0;
+  }
+}
+
+/*=====================Aside-Sidebar================*/
+
+.time-notification{
+  opacity: 0.6;
+}
+
+.text-sidebar:hover{
+  color: #58a6ff;
+}
+
+.subtitulo-sidebar:hover{
+  color: #58a6ff;
+  text-decoration: none;
+  
+}
+
+#sidebar a:hover {
+  color: #58a6ff;
+}
+
+.star-number::after{
+  content: '';
+  height: 1px;
+  width: 100%;
+  background-color: white;
+
+  display: block;
+  margin-top: 20px;
+  opacity: 0.2;
+}
+
+.ball-text::before{
+  content: '';
+  height: 18px;
+  width: 18px;
+  background-color: rgb(245, 245, 81);
+  border-radius: 100%;
+
+  display: inline-block;
+  margin: 4px;
+  
+}
+
+.explore-more{
+  opacity: 0.6;
+}
+
+
+
+.content-sidebar::before{
+  content: '';
+  height: 290px;
+  width: 1px;
+  background-color: white;
+  display: flex;
+  position: absolute;
+  opacity: 0.3;
+  margin-left: -21px;
+  
+}
+
+.time-notification::before{
+  content: '';
+  height: 12px;
+  width: 12px;
+  border-radius: 100%;
+  background-color: white;
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 6px;
+}
+
+@media(max-width:1003px){
+  #sidebar{
+    display: none;
   }
 }
