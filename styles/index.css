@@ -252,8 +252,6 @@ input {
 }
 
 @media (min-width: 768px) {
-  aside {
-  }
   .green-button {
     display: inline-flex;
   }
