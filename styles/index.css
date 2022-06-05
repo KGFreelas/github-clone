@@ -273,6 +273,68 @@ input {
   padding: 10px;
 }
 
+/* -------footer----------*/
+
+.principal-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.lamp {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.lamp p {
+  color: #8b949e;
+  font-size: 12px;
+  text-justify: auto;
+}
+
+.lamp p strong {
+  color: #58a6ff;
+}
+
+.wifi {
+  display: flex;
+  gap: 8px;
+  padding: 20px;
+}
+
+.wifi a p {
+  font-weight: normal;
+  font-size: 16px;
+  color: #8b949e;
+  margin: 0;
+  padding: 0;
+  margin-top: 6px;
+}
+
+.wifi a p:hover {
+  color: #58a6ff;
+  text-decoration: underline;
+}
+
+.wifi img {
+  margin: 0;
+  margin-bottom: 6px;
+  width: 20px;
+}
+
+.link-img {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.link-img:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 768px) {
   .green-button {
     display: inline-flex;
