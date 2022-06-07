@@ -110,6 +110,7 @@ main {
   color: #8b949e;
   font-weight: normal;
 }
+
 .box-kgfreelas-githubclone a:hover {
   color: #58a6ff;
 }
@@ -131,6 +132,11 @@ main {
   padding: 4px 12px;
 }
 
+.box-star-ld {
+  padding: 4px 12px;
+  border: 1px solid white;
+}
+
 .box-star:hover {
   border: 1px solid rgba(255, 255, 255, 0.541);
 }
@@ -141,6 +147,18 @@ main {
 
 .box-star img {
   width: 20px;
+}
+
+.box-star-unic input {
+  margin-left: 8px;
+  margin-top: 8px;
+  padding: 4px;
+  color: white;
+  background-color: #161b22;
+}
+
+.box-star-unic input:hover {
+  border: 1px solid rgba(255, 255, 255, 0.541);
 }
 
 .box-lembrete p {
